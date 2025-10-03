@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codenscious AI - Physiotherapist</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-white text-gray-900">
+
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between px-10 py-4 shadow-sm">
+    <!-- Logo -->
+    <div class="flex items-center space-x-2">
+      <img src="public/Screenshot 2025-09-16 183030.png" 
+           alt="Logo" class="h-15 w-20">
+      <h1 class="text-4xl font-semibold">Codenscious ai.</h1>
+    </div>
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex space-x-8 text-gray-700 font-medium">
+      <a href="#" class="text-xl hover:text-blue-500">Projects</a>
+      <a href="#" class="text-xl hover:text-blue-500">Products</a>
+      <a href="#" class="text-xl hover:text-blue-500">Services</a>
+      <a href="#" class="text-xl hover:text-blue-500">About Us</a>
+    </div>
+
+    <!-- Join Us Button -->
+    <button class="hidden md:block bg-gray-900 text-white px-6 py-2 rounded-full font-semibold text-xl hover:bg-gray-700">
+      Join Us
+    </button>
+
+    <!-- Hamburger Button -->
+    <button id="menu-btn" class="md:hidden text-gray-900 focus:outline-none" title="Open menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" 
+           viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+              d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="menu" class="hidden md:hidden bg-gray-100 px-6 py-4 space-y-4">
+    <a href="#" class="block text-gray-700 hover:text-black">Projects</a>
+    <a href="#" class="block text-gray-700 hover:text-black">Products</a>
+    <a href="#" class="block text-gray-700 hover:text-black">Services</a>
+    <a href="#" class="block text-gray-700 hover:text-black">About Us</a>
+    <button class="w-full bg-gray-900 text-white px-5 py-2 rounded-full font-semibold hover:bg-gray-700">
+      Join Us
+    </button>
+  </div>
+
+ <!-- ================= HERO SECTION ================= -->
+<section id="hero" class="min-h-screen flex flex-col lg:flex-row justify-between px-6 lg:px-20 py-16 bg-white">
+  <!-- Left Side Content -->
+  <div class="max-w-xl text-center lg:text-left">
+    <h1 class="text-3xl lg:text-5xl font-extrabold leading-snug mb-6">
+      Helping Physiotherapists Diagnose Better—With AI On Your Phone
+    </h1>
+    <p class="text-gray-600 mb-6 font-semibold">
+      During the pandemic, Z Solutions Canada faced a challenge; enable physiotherapists 
+      to monitor recovery without seeing patients in person. Codenscious.ai built an AI-powered tool that analyzes movement—entirely on-device.
+    </p>
+
+    <a href="#" class="bg-gray-900 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-800">
+      Explore the Project
+    </a>
+  </div>
+
+<!-- Right Image -->
+<div class="mt-10 md:mt-0 md:w-1/2 flex justify-center">
+  <div class="relative w-[250px] md:w-[300px]">
+    
+    <!-- Phone Frame -->
+    <img src="public/blue4142-tp4-300w.png" alt="Phone Frame" class="w-full relative z-10">
+
+    <!-- Woman Image inside phone -->
+    <img src="public/image274142-x0a-300w.png" alt="Woman Exercise"
+         class="absolute top-[12%] left-[8%] w-[84%] h-[76%] object-cover rounded-lg z-0">
+
+             <!-- Overlay Content -->
+    <div class="absolute top-[15%] left-1/2 transform -translate-x-1/2 text-black font-semibold text-sm md:text-base z-30">
+      Real-Time Analysis
+    </div>
+
+    <!-- Knee Angle Label -->
+    <div class="absolute top-[55%] left-[10%] px-2 py-1 rounded-md text-xs font-semibold text-black-700 z-30">
+      Knee angle<br>64 °
+    </div>
+  </div>
+</div>
+
+</section>
+
+<!-- ================= CHALLENGE SECTION ================= -->
+<section id="challenge" class="py-20 px-6 lg:px-20 bg-white border-t border-gray-200">
+  <h2 class="text-3xl lg:text-4xl font-bold text-center mb-12 tracking-wide">
+    THE CHALLENGE
+  </h2>
+
+  <!-- Cards Container -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+    
+    <!-- Card 1 -->
+    <div class="bg-gray-50 rounded-xl shadow-md p-6 flex flex-col items-center hover:shadow-lg transition">
+      <img src="public/Screenshot 2025-09-16 160221.png" alt="Clinic Icon" class="w-16 h-16 mb-4">
+      <h3 class="text-lg font-semibold mb-2">Limited Access to Clinics</h3>
+      <p class="text-gray-600 text-sm">
+        With clinics closed during COVID-19, patients missed critical physiotherapy 
+        sessions—stalling recovery and progress.
+      </p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-gray-50 rounded-xl shadow-md p-6 flex flex-col items-center hover:shadow-lg transition">
+      <img src="public/Screenshot 2025-09-16 153015.png" alt="Movement Icon" class="w-15 h-20 mb-4">
+      <h3 class="text-lg font-semibold mb-2">No Visibility Into Patient Movement</h3>
+      <p class="text-gray-600 text-sm">
+        Without in-person visits, doctors had no way to see if patients were doing 
+        their exercises correctly or consistently.
+      </p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-gray-50 rounded-xl shadow-md p-6 flex flex-col items-center hover:shadow-lg transition">
+      <img src="public/Screenshot 2025-09-16 153041.png" alt="Privacy Icon" class="w-16 h-16 mb-4">
+      <h3 class="text-lg font-semibold mb-2">Privacy Barriers With Cloud Solutions</h3>
+      <p class="text-gray-600 text-sm">
+        Sharing video data via cloud tools raised serious privacy concerns—posing 
+        risks to patient confidentiality and compliance.
+      </p>
+    </div>
+  </div>
+
+  <!-- Footer Text -->
+  <p class="mt-12 text-center text-gray-700 text-sm md:text-base max-w-3xl mx-auto">
+    Codenscious.ai addressed these challenges head-on—with a private, efficient, 
+    and remote-first AI solution.
+  </p>
+</section>
+
+<!-- ================= SOLUTION SECTION ================= -->
+ <hr class="my-12 border-t border-black-750" />
+<section id="solution" class="py-20 px-6 lg:px-20 bg-white">
+  <h2 class="text-3xl lg:text-4xl font-bold text-center mb-12 tracking-wide">
+    OUR SOLUTION
+  </h2>
+
+  <div class="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center gap-12">
+    <div class="max-w-xl text-center lg:text-left">
+      <h3 class="text-3xl lg:text-4xl font-bold leading-snug mb-6">
+        A Smarter, Safer Way to<br class="hidden md:inline"> Support Recovery—Powered by AI
+      </h3>
+      <p class="text-gray-600">
+        Codenscious.ai developed a real-time movement analysis system that runs entirely on your phone—no cloud needed, no compromises on privacy. Just smart, seamless support for physiotherapists and their patients, right when it's needed most.
+      </p>
+    </div>
+
+    <div class="space-y-8 max-w-md">
+      <div class="flex items-start space-x-4">
+        <img src="public/group4142-1ish.svg" alt="Group Icon" title="Group Icon" class="h-12 w-12 text-blue-900 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l-3 3H3m15 10v-5l-3 3M6 6v12M18 6v12" />
+        </svg>
+        <div>
+          <h4 class="text-lg font-semibold">Real-Time Exercise Analysis</h4>
+          <p class="text-gray-600 text-sm">AI tracks posture and movement in real-time, helping patients follow exercises correctly—every rep, every frame.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start space-x-4">
+        <img src="public/vector4142-mt2.svg" alt="Vector Icon" title="Vector Icon" class="h-12 w-12 text-blue-900 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 17V7m2-2h4a2 2 0 012 2v10a2 2 0 01-2 2h-4a2 2 0 01-2-2V7a2 2 0 012-2z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 17h.01M9 11h.01M9 14h.01" />
+        </svg>
+        <div>
+          <h4 class="text-lg font-semibold">Automated Progress Reports</h4>
+          <p class="text-gray-600 text-sm">Doctors get instant, structured reports on range, form, and consistency—no need for manual review.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start space-x-4">
+        <img src="public/vector4142-rke3.svg" alt="Privacy Icon" title="Privacy Icon" class="h-12 w-12 text-blue-900 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2.25c0 .75.5 1.5 1.25 1.5H18c.75 0 1.5-.75 1.5-1.5V13.5c0-.75-.75-1.5-1.5-1.5h-5.25c-.75 0-1.25.75-1.25 1.5V15z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 15a4.5 4.5 0 00-4.5 4.5v1.5a1.5 1.5 0 001.5 1.5H18m-7.5-6a3.75 3.75 0 01-3.75 3.75h-1.5a1.5 1.5 0 01-1.5-1.5v-1.5a3.75 3.75 0 013.75-3.75h1.5A1.5 1.5 0 019 9h4.5a3.75 3.75 0 013.75 3.75V15" />
+        </svg>
+        <div>
+          <h4 class="text-lg font-semibold">On-Device & Privacy-First</h4>
+          <p class="text-gray-600 text-sm">All analysis happens right on the phone—no cloud, no data sharing, no privacy concerns.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="my-12 border-t border-gray-200" />
+
+<section id="results" class="py-20 px-6 lg:px-20 bg-white">
+  <h2 class="text-3xl lg:text-4xl font-bold text-center mb-12 tracking-wide">
+    QUANTIFIABLE RESULTS THAT MATTER
+  </h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 max-w-5xl mx-auto">
+
+    <div class="bg-white rounded-xl p-5 flex items-start space-x-4 border border-gray-200 shadow-sm hover:shadow-lg transition-shadow duration-300">
+      <img src="public/image.png" alt="Piggy Bank Icon" title="Piggy Bank Icon" class="w-15 h-15 flex-shrink-0">
+      <div>
+        <h3 class="text-3xl lg:text-4xl font-bold text-blue-900 mb-2">$500K</h3>
+        <p class="text-lg font-semibold mb-1">Saved Annually</p>
+        <p class="text-gray-600 text-sm">Saved in cloud and infrastructure costs by moving AI fully on-device.</p>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-xl p-6 flex items-start space-x-4 border border-gray-200 shadow-sm hover:shadow-lg transition-shadow duration-300">
+      <img src="public/vectori414-5h3e.svg" alt="Hospital Icon" title="Hospital Icon" class="w-12 h-12 flex-shrink-0">
+      <div>
+        <h3 class="text-3xl lg:text-4xl font-bold text-blue-900 mb-2">40%</h3>
+        <p class="text-lg font-semibold mb-1">Reduction in Visits</p>
+        <p class="text-gray-600 text-sm">Fewer in-person appointments needed—thanks to accurate remote assessments.</p>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-xl p-6 flex items-start space-x-4 border border-gray-200 shadow-sm hover:shadow-lg transition-shadow duration-300">
+      <img src="public/vectori414-itjl.svg" alt="Stopwatch Icon" title="Stopwatch Icon" class="w-12 h-15 flex-shrink-0">
+      <div>
+        <h3 class="text-3xl lg:text-4xl font-bold text-blue-900 mb-2">3x</h3>
+        <p class="text-lg font-semibold mb-1">Faster Assessments</p>
+        <p class="text-gray-600 text-sm">AI-based evaluations are 3x faster than manual assessments—no compromise on accuracy.</p>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-xl p-6 flex items-start space-x-4 border border-gray-200 shadow-sm hover:shadow-lg transition-shadow duration-300">
+      <img src="public/vectori414-3zra.svg" alt="Smiley Face Icon" title="Smiley Face Icon" class="w-12 h-12 flex-shrink-0">
+      <div>
+        <h3 class="text-3xl lg:text-4xl font-bold text-blue-900 mb-2">90%</h3>
+        <p class="text-lg font-semibold mb-1">Patient Satisfaction</p>
+        <p class="text-gray-600 text-sm">Patients found remote care more flexible, convenient, and trustworthy.</p>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- ================= REVIEW SECTION ================= -->
+<hr class="my-12 border-t border-gray-200" />
+
+<section id="patient-experience" class="py-20 px-6 lg:px-20 bg-gray-50">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl lg:text-4xl font-bold tracking-wide text-gray-900">
+      PATIENT EXPERIENCE
+    </h2>
+    <p class="text-gray-600 mt-2">How we make a difference</p>
+  </div>
+
+  <div class="flex flex-col md:flex-row md:flex-nowrap overflow-x-auto gap-8 lg:gap-12 pb-6">
+
+    <div class="flex-shrink-0 w-full md:w-[280px] lg:w-[320px] p-6 rounded-xl border border-gray-200 shadow-sm bg-cyan hover:shadow-lg transition-shadow duration-300">
+      <div class="flex items-center mb-4 space-x-1">
+        <img src="public/star4142-1pgf.svg" alt="Star" class="h-5 w-5 text-yellow-400">
+        <img src="public/star4142-1pgf.svg" alt="Star" class="h-5 w-5 text-yellow-400">
+        <img src="public/star4142-1pgf.svg" alt="Star" class="h-5 w-5 text-yellow-400">
+        <img src="public/star4142-1pgf.svg" alt="Star" class="h-5 w-5 text-yellow-400">
+        <img src="public/star4142-g6y9.svg" alt="Star" class="h-5 w-5 text-yellow-400">
+      </div>
+      <p class="text-black-700 text-sm font-semibold leading-relaxed mb-4">
+        As a mom, I barely have time to rest. This solution let me do therapy while watching my kids — no travel, no stress, and full support with instant feedback.
+      </p>
+      <div class="text-blue-900">
+        <p class="font-semibold">Neha S.</p>
+        <p class="text-black-500 ">Busy Mom with Knee Rehab</p>
+      </div>
+    </div>
+
+    <div class="flex-shrink-0 w-full md:w-[280px] lg:w-[320px] p-6 rounded-xl border border-gray-200 shadow-sm bg-white hover:shadow-lg transition-shadow duration-300">
+      <div class="flex items-center mb-4 space-x-1">
+        <img src="public/star4142-1pgf.svg" alt="Star" class="h-5 w-5 text-yellow-400">
+        <img src="public/star4142-1pgf.svg" alt="Star" class="h-5 w-5 text-yellow-400">
+        <img src="public/star4142-1pgf.svg" alt="Star" class="h-5 w-5 text-yellow-400">
+        <img src="public/star4142-1pgf.svg" alt="Star" class="h-5 w-5 text-yellow-400">
+        <img src="public/star4142-gt.svg" alt="Star" class="h-5 w-5 text-yellow-400">
+      </div>
+      <p class="text-black-700 text-sm font-semibold leading-relaxed mb-4">
+        After COVID, even a clinic visit felt risky. This app became my lifeline. It watched my movements like a coach and gave me confidence I was doing things right — all from home.
+      </p>
+      <div class="text-blue-900">
+        <p class="font-semibold">Ananya R.</p>
+        <p class="text-black-500 ">Post-COVID Recovery</p>
+      </div>
+    </div>
+
+    <div class="flex-shrink-0 w-full md:w-[280px] lg:w-[320px] p-6 rounded-xl border border-gray-200 shadow-sm bg-cyan hover:shadow-lg transition-shadow duration-300">
+      <div class="flex items-center mb-4 space-x-1">
+        <img src="public/star4142-1pgf.svg" alt="Star" class="h-5 w-5 text-yellow-400">
+        <img src="public/star4142-1pgf.svg" alt="Star" class="h-5 w-5 text-yellow-400">
+        <img src="public/star4142-1pgf.svg" alt="Star" class="h-5 w-5 text-yellow-400">
+        <img src="public/star4142-1pgf.svg" alt="Star" class="h-5 w-5 text-yellow-400">
+        <img src="public/star4142-g6y9.svg" alt="Star" class="h-5 w-5 text-gray-400">
+      </div>
+      <p class="text-black-700 text-sm font-semibold leading-relaxed mb-4">
+        I always ignored my posture until the pain got worse. This AI app helped me correct my exercises without needing weekly appointments. It was like having a physiotherapist in my pocket.
+      </p>
+      <div class="text-blue-900">
+        <p class="font-semibold">Ravi M.</p>
+        <p class="text-black-500">Office Worker with Back Pain</p>
+      </div>
+    </div>
+
+    <div class="flex-shrink-0 w-full md:w-[280px] lg:w-[320px] p-6 rounded-xl border border-gray-200 shadow-sm bg-white hover:shadow-lg transition-shadow duration-300">
+      <div class="flex items-center mb-4 space-x-1">
+        <img src="public/star4142-1pgf.svg" alt="Star" class="h-5 w-5 text-yellow-400">
+        <img src="public/star4142-1pgf.svg" alt="Star" class="h-5 w-5 text-yellow-400">
+        <img src="public/star4142-1pgf.svg" alt="Star" class="h-5 w-5 text-yellow-400">
+        <img src="public/star4142-1pgf.svg" alt="Star" class="h-5 w-5 text-yellow-400">
+        <img src="public/star4142-g6y9.svg" alt="Star" class="h-5 w-5 text-yellow-400">
+      </div>
+      <p class="text-black-700 text-sm font-semibold leading-relaxed mb-4">
+        Living with chronic pain means every small improvement matters. With this app, I don’t have to rely on guesswork. I feel heard, seen, and supported — finally.
+      </p>
+      <div class="text-blue-900">
+        <p class="font-semibold">Meena P.</p>
+        <p class="text-black-500">Chronic Pain Management</p>
+      </div>
+    </div>
+
+    <div class="flex-shrink-0 w-full md:w-[280px] lg:w-[320px] p-6 rounded-xl border border-gray-200 shadow-sm bg-cyan hover:shadow-lg transition-shadow duration-300">
+      <div class="flex items-center mb-4 space-x-1">
+        <img src="public/star4142-1pgf.svg" alt="Star" class="h-5 w-5 text-yellow-400">
+        <img src="public/star4142-1pgf.svg" alt="Star" class="h-5 w-5 text-yellow-400">
+        <img src="public/star4142-1pgf.svg" alt="Star" class="h-5 w-5 text-yellow-400">
+        <img src="public/star4142-1pgf.svg" alt="Star" class="h-5 w-5 text-yellow-400">
+        <img src="public/star4142-1pgf.svg" alt="Star" class="h-5 w-5 text-yellow-400">
+      </div>
+      <p class="text-black-700 text-sm font-semibold leading-relaxed mb-4">
+        I had ACL surgery and couldn't afford regular clinic visits. The AI helped track my progress and gave me detailed reports that my doctor could use right away.
+      </p>
+      <div class="text-blue-900">
+        <p class="font-semibold">Aliya B.</p>
+        <p class="text-black-500">ACL Surgery Recovery</p>
+      </div>
+    </div>
+
+    <div class="flex-shrink-0 w-full md:w-[280px] lg:w-[320px] p-6 rounded-xl border border-gray-200 shadow-sm bg-white hover:shadow-lg transition-shadow duration-300">
+      <div class="flex items-center mb-4 space-x-1">
+        <img src="public/star4142-1pgf.svg" alt="Star" class="h-5 w-5 text-yellow-400">
+        <img src="public/star4142-1pgf.svg" alt="Star" class="h-5 w-5 text-yellow-400">
+        <img src="public/star4142-1pgf.svg" alt="Star" class="h-5 w-5 text-yellow-400">
+        <img src="public/star4142-1pgf.svg" alt="Star" class="h-5 w-5 text-yellow-400">
+        <img src="public/star4142-gt.svg" alt="Star" class="h-5 w-5 text-yellow-400">
+      </div>
+      <p class="text-black-700 text-sm font-semibold leading-relaxed mb-4">
+        I was nervous about using tech at my age, but it was so easy. It showed me when I moved wrong and guided me gently. I feel more independent now.
+      </p>
+      <div class="text-blue-900">
+        <p class="font-semibold">Suresh K.</p>
+        <p class="text-black-500">Senior Citizen</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER SECTION ================= -->
+<hr class="my-12 border-t border-gray-200" />
+
+<section id="cta" class="bg-white py-20 px-6 lg:px-20 text-center">
+  <p class="text-gray-600 mb-2 font-semibold">LET'S BUILD</p>
+  <h2 class="text-3xl lg:text-4xl font-bold mb-6">Ready to Build AI That Heals ?</h2>
+  <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+    Let's explore how Codenscious.ai can bring AI-driven innovation to your healthcare workflow.
+  </p>
+
+  <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+    <button class="w-full sm:w-auto bg-blue-900 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-800 transition">
+      Book a demo
+    </button>
+    <button class="w-full sm:w-auto bg-transparent border border-gray-900 text-gray-900 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
+      Get in Touch
+    </button>
+  </div>
+</section>
+
+<footer id="footer" class="bg-gray-900 text-gray-400 py-16 px-6 lg:px-20">
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+    <div class="col-span-full lg:col-span-1 text-center lg:text-left mb-8 lg:mb-0">
+      <div class="flex items-center justify-center lg:justify-start space-x-2 mb-4"> 
+        <img src="public/Screenshot 2025-09-16 203156.png" alt="Codenscious AI Logo" class="h-15 w-20"> 
+        <h3 class="text-2xl font-bold text-white">Codenscious.ai</h3>
+      </div>
+      <p class="text-sm font-semibold">
+        "Crafting innovative digital experiences that transform businesses."
+      </p>
+    </div>
+
+    <div class="text-center lg:text-left">
+      <h4 class="font-semibold text-white text-xl mb-4">Information</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-white transition">About Us</a></li>
+        <li><a href="#" class="hover:text-white transition">Events</a></li>
+        <li><a href="#" class="hover:text-white transition">Testimonials</a></li>
+        <li><a href="#" class="hover:text-white transition">More Details</a></li>
+        <li><a href="#" class="hover:text-white transition">Blogs</a></li>
+      </ul>
+    </div>
+
+    <div class="text-center lg:text-left">
+      <h4 class="font-semibold text-white text-xl mb-4">Links</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-white transition">Services</a></li>
+        <li><a href="#" class="hover:text-white transition">Support</a></li>
+        <li><a href="#" class="hover:text-white transition">Terms & Conditions</a></li>
+        <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="text-center lg:text-left">
+      <h4 class="font-semibold text-white text-xl mb-4">Subscribe</h4>
+      <p class="text-sm mb-4">
+        Subscribe to our newsletter for upcoming news!!
+      </p>
+      <form class="flex flex-col sm:flex-row lg:flex-col xl:flex-row items-center space-y-2 sm:space-y-0 lg:space-y-2 xl:space-y-0 sm:space-x-2 lg:space-x-0 xl:space-x-2">
+        <input type="email" placeholder="Enter Your Email" class="w-full px-4 py-2 rounded-full text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <button type="submit" class="w-full sm:w-auto bg-blue-900 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-800 transition">
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <hr class="border-t border-gray-700 my-12" />
+  <div class="flex flex-col lg:flex-row items-center justify-between text-gray-500">
+    <div class="flex space-x-4 mb-4 lg:mb-0">
+        <p>Contact Us : </p> 
+      <a href="#" aria-label="Email" class="hover:text-white transition"> 
+        <img src="public/email-8-svgrepo-com.svg" alt="Email Icon" title="Email Icon" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"> 
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-9 13h9a2 2 0 002-2V5a2 2 0 00-2-2H3a2 2 0 00-2 2v14a2 2 0 002 2z" />
+        </svg>
+      </a>
+      <a href="#" aria-label="Phone" class="hover:text-white transition"> 
+        <img src="public/dialer-svgrepo-com.svg" alt="Phone Icon" title="Phone Icon" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"> 
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.125l-2.618 1.688a2 2 0 00-.77 2.802l.77.77a2 2 0 002.802-.77l1.687-2.618a1 1 0 011.125-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2H5a2 2 0 01-2-2V5z" />
+        </svg>
+      </a>
+      <a href="#" aria-label="Twitter" class="hover:text-white transition"> 
+        <img src="public/twitter-svgrepo-com (1).svg" alt="Twitter Icon" title="Twitter Icon" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"> 
+          <path d="M22.46 6.37a4.92 4.92 0 01-1.35.37 2.45 2.45 0 002.13-1.22 4.93 4.93 0 01-1.46.55 2.45 2.45 0 00-4.17 2.24A6.98 6.98 0 015.68 5.75a2.45 2.45 0 00.76 3.28 2.45 2.45 0 01-1.1-.3v.03a2.45 2.45 0 001.97 2.4A2.45 2.45 0 017 12.63c.68 0 1.35-.07 1.99-.21a2.45 2.45 0 002.28 1.7 4.9 4.9 0 01-3.03 1.05c-.2 0-.41-.01-.6-.05a6.98 6.98 0 007.5 7.97c2.16-1.7 3.99-4.22 4.67-7.25-.01-.3-.02-.6-.02-.9a4.86 4.86 0 001.19-1.24 3.49 3.49 0 01-1.48.4c.59-.36 1.05-.88 1.27-1.45z"/>
+        </svg>
+      </a>
+      <a href="#" aria-label="Instagram" class="hover:text-white transition"> 
+        <img src="public/instagram-svgrepo-com.svg" alt="Instagram Icon" title="Instagram Icon" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"> 
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.2 2.6c-.66 0-1.2.54-1.2 1.2s.54 1.2 1.2 1.2 1.2-.54 1.2-1.2-.54-1.2-1.2-1.2zm-.11 3.51c-2.31 0-4.2 1.89-4.2 4.2s1.89 4.2 4.2 4.2 4.2-1.89 4.2-4.2-1.89-4.2-4.2-4.2zm-2.1 4.2c0 1.16.94 2.1 2.1 2.1s2.1-.94 2.1-2.1-.94-2.1-2.1-2.1-2.1.94-2.1 2.1z"/>
+        </svg>
+      </a>
+      <a href="#" aria-label="Facebook" class="hover:text-white transition"> 
+        <img src="public/facebook-svgrepo-com.svg" alt="Facebook Icon" title="Facebook Icon" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" title="Facebook Icon"> 
+          <path d="M22.67 11.37a.64.64 0 01-.19-.48v-2.14a.64.64 0 01.19-.48c.18-.18.4-.29.66-.29.26 0 .49.11.66.29a.65.65 0 01.19.48v2.14a.64.64 0 01-.19.48c-.17.18-.4.29-.66.29-.26 0-.49-.11-.66-.29zM19.78 6.45a.65.65 0 01-.19-.48v-2.14a.64.64 0 01.19-.48c.18-.18.4-.29.66-.29.26 0 .49.11.66.29a.65.65 0 01.19.48v2.14a.64.64 0 01-.19.48c-.17.18-.4.29-.66.29-.26 0-.49-.11-.66-.29zM16.89 4.77a.64.64 0 01-.19-.48V2.15a.64.64 0 01.19-.48c.18-.18.4-.29.66-.29.26 0 .49.11.66.29a.65.65 0 01.19.48v2.14a.64.64 0 01-.19.48c-.17.18-.4.29-.66.29-.26 0-.49-.11-.66-.29zM14 4.77a.64.64 0 01-.19-.48V2.15a.64.64 0 01.19-.48c.18-.18.4-.29.66-.29.26 0 .49.11.66.29a.65.65 0 01.19.48v2.14a.64.64 0 01-.19.48c-.17.18-.4.29-.66.29-.26 0-.49-.11-.66-.29zM11.11 6.45a.65.65 0 01-.19-.48v-2.14a.64.64 0 01.19-.48c.18-.18.4-.29.66-.29.26 0 .49.11.66.29a.65.65 0 01.19.48v2.14a.64.64 0 01-.19.48c-.17.18-.4.29-.66.29-.26 0-.49-.11-.66-.29zM8.22 8.13a.64.64 0 01-.19-.48v-2.14a.64.64 0 01.19-.48c.18-.18.4-.29.66-.29.26 0 .49.11.66.29a.65.65 0 01.19.48v2.14a.64.64 0 01-.19.48c-.17.18-.4.29-.66.29-.26 0-.49-.11-.66-.29zM5.33 9.81a.65.65 0 01-.19-.48v-2.14a.64.64 0 01.19-.48c.18-.18.4-.29.66-.29.26 0 .49.11.66.29a.65.65 0 01.19.48v2.14a.64.64 0 01-.19.48c-.17.18-.4.29-.66.29-.26 0-.49-.11-.66-.29zM2.44 11.49a.64.64 0 01-.19-.48v-2.14a.64.64 0 01.19-.48c.18-.18.4-.29.66-.29.26 0 .49.11.66.29a.65.65 0 01.19.48v2.14a.64.64 0 01-.19.48c-.17.18-.4.29-.66.29-.26 0-.49-.11-.66-.29z"/>
+        </svg>
+      </a>
+    </div>
+    <div class="text-sm text-center lg:text-right">
+      © 2025 Codenscious.ai. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
