@@ -1742,13 +1742,13 @@ body.navbar-visible #hero {
     display: inline-flex;
     gap: 90px;
     animation: scroll 15s linear infinite;
-    width: max-content;
+    width: 100%;
     padding-left: 0px;
 }
 
 .logo-track img {
     height: 60px;
-    width: auto;
+    width: 100%;
 }
 
 @keyframes scroll {
@@ -2669,6 +2669,79 @@ body {
     .blank-page {
         min-height: 65vh;
     }
+}
+
+/* wrapper and spacing */
+.logo-wrapper { width: 100%; }
+
+/* ---------- MARQUEE (desktop) ---------- */
+.logo-marquee {
+  overflow: hidden;
+  background: #000;        /* keep your footer background */
+  padding: 4rem 0;       /* adjust vertical spacing */
+  width: 100%;
+}
+
+.logo-track {
+  display: flex;
+  gap: 3.5rem;             /* similar to your 90px; reduce for smaller screens if needed */
+  align-items: center;
+  width: max-content;      /* track length is governed by its content */
+  animation: scroll 20s linear infinite;
+}
+
+/* each logo must not shrink so the track forms a continuous row */
+.logo-track img {
+  flex: 0 0 auto;
+  height: 60px;            /* fixed height, preserves aspect ratio */
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* marquee animation: since track contains duplicated content,
+   moving -50% will slide the first half out and show the duplicate */
+@keyframes scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ---------- GRID (mobile / tablet) ---------- */
+.logo-grid {
+  background: #000;
+  padding: 4rem 0;
+  display: grid;
+  gap: 3.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  align-items: center;
+  justify-items: center;
+  height: 300px;
+}
+
+.logo-grid img {
+  height: 48px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* ---------- Responsive tweaks for intermediate breakpoints ---------- */
+@media (max-width: 1023px) {
+  /* hide marquee under desktop width */
+  .logo-marquee { display: none !important; }
+  .logo-grid { display: grid; }
+}
+
+@media (min-width: 1024px) {
+  /* hide grid on large screens */
+  .logo-grid { display: none; }
+  .logo-marquee { display: block; }
+}
+
+/* Optional: reduce gap for smaller screens */
+@media (max-width: 640px) {
+  .logo-track { gap: 3rem; }
+  .logo-track img { height: 44px; }
 }
 
 
