@@ -860,24 +860,40 @@
         </section>
 
         <footer class="bg-black border-t border-gray-900 scroll-snap-section">
-            <div class="container mx-auto px-6 py-24 md:py-32 text-center">
+            <div class="container mx-auto px-6 py-24 md:py-10 text-center">
                 <p class="sub-heading text-4xl">Our Clients</p>
                 <h2 class="heading-font text-5xl mt-4 sub-heading">Trusted By The Best</h2>
-                <div class="logo-marquee">
-                    <div class="logo-track">
-                        <img src="logos/logo2.png" alt="Adani Power" class="h-12" />
-                        <img src="logos/logo4.png" alt="Cyient" class="h-12" />
-                        <img src="logos/logo1.png" alt="Deloitte" class="h-12" />
-                        <img src="logos/logo3.png" alt="Genpact" class="h-12" />
-                        <img src="logos/logo5.png" alt="Unisys" class="h-12" />
-                        <img src="logos/logo2.png" alt="Adani Power" class="h-12" />
-                        <img src="logos/logo4.png" alt="Cyient" class="h-12" />
-                        <img src="logos/logo1.png" alt="Deloitte" class="h-15" />
-                        <img src="logos/logo3.png" alt="Genpact" class="h-12" />
-                        <img src="logos/logo5.png" alt="Unisys" class="h-12" />
+                <!-- inside your footer where the logos go -->
+                <div class="logo-wrapper">
+                    <!-- Desktop marquee (visible on lg and up) -->
+                    <div class="logo-marquee hidden lg:block" aria-hidden="false">
+                        <div class="logo-track" aria-hidden="true">
+                            <!-- first set -->
+                            <img src="logos/logo2.png" alt="Adani Power" />
+                            <img src="logos/logo4.png" alt="Cyient" />
+                            <img src="logos/logo1.png" alt="Deloitte" />
+                            <img src="logos/logo3.png" alt="Genpact" />
+                            <img src="logos/logo5.png" alt="Unisys" />
+                            <!-- duplicate set for seamless loop -->
+                            <img src="logos/logo2.png" alt="" aria-hidden="true" />
+                            <img src="logos/logo4.png" alt="" aria-hidden="true" />
+                            <img src="logos/logo1.png" alt="" aria-hidden="true" />
+                            <img src="logos/logo3.png" alt="" aria-hidden="true" />
+                            <img src="logos/logo5.png" alt="" aria-hidden="true" />
+                        </div>
+                    </div>
+
+                    <!-- Mobile / Tablet grid (hidden on lg and up) -->
+                    <div class="logo-grid block lg:hidden">
+                        <img src="logos/logo2.png" alt="Adani Power" />
+                        <img src="logos/logo4.png" alt="Cyient" />
+                        <img src="logos/logo1.png" alt="Deloitte" />
+                        <img src="logos/logo3.png" alt="Genpact" />
+                        <img src="logos/logo5.png" alt="Unisys" />
                     </div>
                 </div>
             </div>
+
         </footer>
 
         <section id="newsletter" class="bg-black scroll-snap-section border-t border-gray-900">
